@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专业技术服务 - 高端数字化解决方案</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        header {
+            padding: 100px 0 60px;
+            text-align: center;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #60a5fa, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-dim);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* 核心优势 (专业自夸) */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .feature-item h3 {
+            color: #60a5fa;
+            margin-bottom: 10px;
+        }
+
+        /* 业务范围卡片 */
+        .services {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: var(--primary-color);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fbbf24;
+            margin: 20px 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-dim);
+        }
+
+        /* 联系方式 */
+        .contact {
+            background: var(--primary-color);
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 30px;
+            margin-bottom: 80px;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin: 10px 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding-bottom: 40px;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>卓越技术 · 驱动未来</h1>
+        <p class="subtitle">14年行业深耕，为您提供从底层网络架构到高并发线上平台的全栈技术支持。</p>
+
+        <div class="features">
+            <div class="feature-item">
+                <h3>高并发架构</h3>
+                <p>拥有处理千万级流量的实战经验，确保系统稳如泰山。</p>
+            </div>
+            <div class="feature-item">
+                <h3>极致性能优化</h3>
+                <p>深度调优，毫秒级响应，让您的用户体验丝滑顺畅。</p>
+            </div>
+            <div class="feature-item">
+                <h3>全栈交付</h3>
+                <p>从需求分析到上线运维，一站式解决您的所有技术难题。</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="services container">
+    <h2 class="section-title">服务项目</h2>
+    <div class="grid">
+        <div class="card">
+            <div>
+                <h2>路由器设置</h2>
+                <p>家庭/企业网络环境搭建，解决死角，优化网络链路。</p>
+            </div>
+            <div class="price">¥300 <span>起</span></div>
+        </div>
+        <div class="card">
+            <div>
+                <h2>服务器搭建</h2>
+                <p>Linux/Windows 环境配置，安全加固，高性能部署。</p>
+            </div>
+            <div class="price">¥1000 <span>起</span></div>
+        </div>
+        <div class="card">
+            <div>
+                <h2>网页设计</h2>
+                <p>现代 UI/UX 设计，多终端适配，彰显品牌高级感。</p>
+            </div>
+            <div class="price">¥1000 <span>起</span></div>
+        </div>
+        <div class="card">
+            <div>
+                <h2>外贸/电商网站</h2>
+                <p>独立站定制，SEO 友好，集成全球主流支付系统。</p>
+            </div>
+            <div class="price">¥1000 <span>起</span></div>
+        </div>
+        <div class="card">
+            <div>
+                <h2>微信小程序</h2>
+                <p>轻量化交互体验，快速抢占流量红利，支持深度功能定制。</p>
+            </div>
+            <div class="price">¥1000 <span>起</span></div>
+        </div>
+        <div class="card">
+            <div>
+                <h2>定制化开发</h2>
+                <p>针对特定业务逻辑的深度定制，打造您的数字化核心竞争力。</p>
+            </div>
+            <div class="price">询价 <span>协商</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="contact">
+        <h2>准备好开启您的项目了吗？</h2>
+        <p>立即联系我们，获取免费技术咨询与方案评估</p>
+        <div style="margin-top: 30px;">
+            <!-- <a href="tel:13800000000" class="contact-info">📞 138-xxxx-xxxx</a>
+            <span class="contact-info">💬 微信: YourID_Tech</span> -->
+            <span class="contact-info">📧 Email: congzi@live.com</span>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Fun90 技术服务工作室. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
